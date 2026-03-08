@@ -23,12 +23,13 @@ Implementar un sistema de gestión de estados utilizando dos pilas manuales:
 
     ```bash
     javac Main.java EditorTexto.java
-    Ejecuta la aplicación:
+    
+3. Ejecuta la aplicación:
 
     ```bash
     java Main
 
-3. 🕹️ Funcionalidades
+4. 🕹️ Funcionalidades
 Escribir: Agrega una nueva línea de texto al editor.
 
 Deshacer (Undo): Remueve la última línea y la mueve al historial de rehacer.
@@ -37,7 +38,7 @@ Rehacer (Redo): Recupera la última línea deshecha.
 
 Mostrar: Visualiza el estado actual del puntero en la pila.
 
-4. 👥 Integrantes 
+5. 👥 Integrantes 
 Alejandro Echavarria Jaramillo - C.C 1017175353
 
 (Integrante 2)

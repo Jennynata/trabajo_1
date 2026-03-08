@@ -44,3 +44,52 @@ class Pila {
         this.tope = -1;
     }
 }
+
+/**
+ * Clase que gestiona las acciones de Deshacer y Rehacer.
+ */
+public class EditorTexto {
+    private Pila pilaPrincipal;
+    private Pila pilaSecundaria;
+
+    public EditorTexto(int capacidad) {
+        pilaPrincipal = new Pila(capacidad);
+        pilaSecundaria = new Pila(capacidad);
+    }
+
+    public void escribir(String texto) {
+        pilaPrincipal.push(texto);
+        // Al escribir algo nuevo, el historial de "Rehacer" debe limpiarse
+        pilaSecundaria.vaciar(); 
+        System.out.println("Texto guardado en el historial.");
+    }
+
+    public void deshacer() {
+        if (!pilaPrincipal.isEmpty()) {
+            String texto = pilaPrincipal.pop();
+            pilaSecundaria.push(texto);
+            System.out.println("Deshecho: " + texto);
+        } else {
+            System.out.println("No hay acciones para deshacer.");
+        }
+    }
+
+    public void rehacer() {
+        if (!pilaSecundaria.isEmpty()) {
+            String texto = pilaSecundaria.pop();
+            pilaPrincipal.push(texto);
+            System.out.println("Rehecho: " + texto);
+        } else {
+            System.out.println("No hay acciones para rehacer.");
+        }
+    }
+
+    public void mostrarTexto() {
+        if (pilaPrincipal.isEmpty()) {
+            System.out.println("El editor está vacío.");
+        } else {
+            System.out.println("--- Contenido Actual ---");
+            System.out.println(pilaPrincipal.peek());
+        }
+    }
+}

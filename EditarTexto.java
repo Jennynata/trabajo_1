@@ -3,9 +3,9 @@
  * Esta clase implementa una pila simple utilizando un arreglo para almacenar los estados del texto.
  */
 class Pila {
-    private String[] elementos;
+    private final String[] elementos;
     private int tope;
-    private int capacidad;
+    private final int capacidad;
 
     public Pila(int capacidad) {
         this.capacidad = capacidad;
@@ -48,9 +48,9 @@ class Pila {
 /**
  * Clase que gestiona las acciones de Deshacer y Rehacer.
  */
-public class EditorTexto {
-    private Pila pilaPrincipal;
-    private Pila pilaSecundaria;
+class EditorTexto {
+    private final Pila pilaPrincipal;
+    private final Pila pilaSecundaria;
 
     public EditorTexto(int capacidad) {
         pilaPrincipal = new Pila(capacidad);

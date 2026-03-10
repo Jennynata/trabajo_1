@@ -46,4 +46,20 @@ Mostrar: Visualiza el estado actual del puntero en la pila.
 
 Alejandro Echavarria Jaramillo - C.C 1017175353
 
-(Integrante 2)
+Natalia castrillon - C.C 1037369541
+
+---
+
+## 📷 Capturas de pantalla
+
+A continuación se muestran capturas de pantalla de la ejecución del simulador:
+
+![Captura 1](./Captura%20de%20pantalla%202026-03-09%20220504.png)
+
+![Captura 2](./Captura%20de%20pantalla%202026-03-09%20220634.png)
+
+![Captura 3](./Captura%20de%20pantalla%202026-03-09%20220656.png)
+
+![Captura 4](./Captura%20de%20pantalla%202026-03-09%20220717.png)
+
+
